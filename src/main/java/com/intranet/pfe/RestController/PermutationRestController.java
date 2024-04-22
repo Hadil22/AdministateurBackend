@@ -4,8 +4,7 @@ import com.intranet.pfe.Entity.Permutation;
 import com.intranet.pfe.Repository.PermutationRepository;
 import com.intranet.pfe.Service.PermutationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,8 +16,7 @@ import java.util.Optional;
 public class PermutationRestController {
     @Autowired
     PermutationService permutationService;
-    @Autowired
-    PermutationRepository permutationRepository;
+
 
     @RequestMapping(method = RequestMethod.POST)
     public Permutation AjouterPermutation(@RequestBody Permutation permutation){
